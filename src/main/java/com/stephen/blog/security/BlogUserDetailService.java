@@ -3,10 +3,12 @@ package com.stephen.blog.security;
 
 import com.stephen.blog.domain.entities.User;
 import com.stephen.blog.repositories.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+@RequiredArgsConstructor
 public class BlogUserDetailService implements UserDetailsService {
 
     private final UserRepository userRepository;
